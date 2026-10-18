@@ -1,6 +1,6 @@
-# Safar Amanah
+# DKU Haji & Umrah
 
-Template website travel/Umrah responsif yang direkonstruksi dari referensi visual yang disediakan. Seluruh halaman dirender secara statis tanpa dependency build.
+Website PT Dayakindo Kalimantan Utama (DKU) untuk layanan Haji & Umrah di Samarinda. Seluruh halaman dirender secara statis tanpa dependency build.
 
 ## Menjalankan lokal
 

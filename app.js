@@ -1,4 +1,6 @@
 const A = './assets/images/';
+const WHATSAPP_URL = 'https://wa.me/6285393360595';
+const INSTAGRAM_URL = 'https://www.instagram.com/dku.hajiumroh/';
 
 // Prefer the highest-resolution crops available from the supplied designs.
 const highResolutionImages = {
@@ -93,17 +95,17 @@ function faq(title = 'Hal yang ingin Anda ketahui', intro = 'Informasi awal untu
 }
 
 function cta() {
-  return `<section class="section cta-strip"><div class="container cta-inner"><div>${eyebrow('MULAI DARI PERCAKAPAN')}<h2>Rencanakan perjalanan dengan lebih tenang.</h2><p>Ceritakan waktu keberangkatan dan kebutuhan Anda. Kanal konsultasi akan tersedia setelah data resmi dilengkapi.</p></div><div class="cta-action"><a class="button" href="?page=contact">Konsultasi via WhatsApp ↗</a><small>CTA demo • Belum terhubung ke WhatsApp</small></div></div></section>`;
+  return `<section class="section cta-strip"><div class="container cta-inner"><div>${eyebrow('MULAI DARI PERCAKAPAN')}<h2>Rencanakan perjalanan dengan lebih tenang.</h2><p>Ceritakan waktu keberangkatan dan kebutuhan Anda. Tim DKU siap membantu memilih perjalanan yang sesuai.</p></div><div class="cta-action"><a class="button" href="${WHATSAPP_URL}" target="_blank" rel="noopener">Konsultasi via WhatsApp ↗</a><small>Terhubung langsung dengan tim DKU</small></div></div></section>`;
 }
 
 function footer() {
-  return `<footer class="footer"><div class="container"><div class="footer-title"><h2>Langkah yang tenang.<br>Perjalanan yang bermakna.</h2><a class="button button-dark" href="?page=contact">Diskusikan rencana Umrah ↗</a></div><div class="footer-grid"><div><h3>Safar Amanah</h3><p>UMRAH • BRAND DEMO<br>Pendampingan personal dan persiapan terarah.</p><p>Paket premium sementara • Bukan identitas resmi</p></div><div><h4>JELAJAHI</h4><p><a href="?page=home">Beranda</a>　/　<a href="?page=packages">Paket Umrah</a><br><a href="?page=about">Tentang Kami</a>　/　<a href="?page=gallery">Galeri</a><br><a href="?page=articles">Artikel</a>　/　<a href="?page=contact">Kontak</a></p></div><div><h4>HUBUNGI KAMI</h4><p>Alamat kantor akan ditambahkan<br>WhatsApp & email menunggu data resmi<br>Instagram • YouTube • Facebook<br>Placeholder kanal sosial</p></div></div><p class="copyright">© Konsep Safar Amanah • Bukan penawaran resmi. Informasi legal dan izin menunggu data perusahaan terverifikasi.</p></div></footer>`;
+  return `<footer class="footer"><div class="container"><div class="footer-title"><h2>Langkah yang tenang.<br>Perjalanan yang bermakna.</h2><a class="button button-dark" href="${WHATSAPP_URL}" target="_blank" rel="noopener">Diskusikan rencana Umrah ↗</a></div><div class="footer-grid"><div class="footer-brand"><img src="${A}dku-logo.png" alt="DKU Haji & Umrah"><p>PT Dayakindo Kalimantan Utama<br>Penyelenggara Haji & Umrah Samarinda.</p></div><div><h4>JELAJAHI</h4><p><a href="?page=home">Beranda</a>　/　<a href="?page=packages">Paket Umrah</a><br><a href="?page=about">Tentang Kami</a>　/　<a href="?page=gallery">Galeri</a><br><a href="?page=articles">Artikel</a>　/　<a href="?page=contact">Kontak</a></p></div><div><h4>HUBUNGI KAMI</h4><p>Jl. Panglima Batur No. 37, Samarinda<br><a href="${WHATSAPP_URL}" target="_blank" rel="noopener">+62 853-9336-0595</a><br><a href="${INSTAGRAM_URL}" target="_blank" rel="noopener">@dku.hajiumroh</a></p></div></div><p class="copyright">© ${new Date().getFullYear()} PT Dayakindo Kalimantan Utama • SK Umrah U.410 Tahun 2021 • SK Haji 602 Tahun 2021</p></div></footer>`;
 }
 
 function homePage() {
   return `<section class="hero">
     <div class="hero-image"><img src="${A}kaaba-hero-hd.png" alt="Masjidil Haram saat fajar" fetchpriority="high"></div>
-    <div class="container hero-content">${eyebrow('PERJALANAN SUCI, DIPERSIAPKAN SEPENUH HATI')}<h1>Menuju Tanah Suci,<br>dengan hati<br>yang lebih tenang.</h1><p>Ruang untuk ibadah. Waktu untuk merenung. Temukan konsep perjalanan Umrah dengan persiapan yang jelas dan pendampingan yang personal.</p><div class="button-row"><a class="button button-light" href="?page=contact">Konsultasi via WhatsApp ↗</a><a class="button button-ghost" href="?page=packages">Jelajahi paket contoh →</a></div><small>Konsep demo • CTA belum terhubung • Visual ilustratif</small></div>
+    <div class="container hero-content">${eyebrow('PERJALANAN SUCI, DIPERSIAPKAN SEPENUH HATI')}<h1>Menuju Tanah Suci,<br>dengan hati<br>yang lebih tenang.</h1><p>Bersama DKU, persiapan Haji dan Umrah Anda didampingi secara jelas, hangat, dan penuh amanah dari Samarinda hingga Tanah Suci.</p><div class="button-row"><a class="button button-light" href="${WHATSAPP_URL}" target="_blank" rel="noopener">Konsultasi via WhatsApp ↗</a><a class="button button-ghost" href="?page=packages">Jelajahi paket →</a></div><small>Penyelenggara resmi • Pendampingan personal • Berbasis di Samarinda</small></div>
   </section>
   <section class="trust-strip"><div class="container trust-grid"><div>${eyebrow('PRINSIP LAYANAN YANG DIUSULKAN • BUKAN KLAIM OPERASIONAL')}</div><div><h3>Informasi transparan</h3><p>Rincian biaya & perjalanan sebelum memutuskan.</p></div><div><h3>Pendampingan personal</h3><p>Kebutuhan jamaah menjadi awal percakapan.</p></div><div><h3>Persiapan terarah</h3><p>Panduan dokumen, perlengkapan, dan manasik.</p></div></div></section>
   <section class="section packages-home"><div class="container"><div class="section-heading with-action"><div>${eyebrow('PILIHAN PERJALANAN • PAKET DEMO')}<h2>Temukan ritme perjalanan Anda.</h2><p>Contoh pilihan untuk beragam kebutuhan. Harga, tanggal, hotel, dan maskapai belum menjadi penawaran resmi.</p></div><a class="button button-outline" href="?page=packages">Semua paket ↗</a></div><div class="package-grid three">${packages.slice(0, 3).map(p => packageCard(p)).join('')}</div></div></section>
@@ -231,6 +233,20 @@ function bindInteractions(page) {
 }
 
 const page = currentPage();
-document.title = `${{home:'Beranda',packages:'Paket Umrah',detail:'Umrah Tenang',about:'Tentang Kami',gallery:'Galeri',articles:'Artikel',contact:'Kontak'}[page]} — Safar Amanah`;
-document.getElementById('app').innerHTML = pages[page]();
+document.title = `${{home:'Beranda',packages:'Paket Umrah',detail:'Umrah Tenang',about:'Tentang Kami',gallery:'Galeri',articles:'Artikel',contact:'Kontak'}[page]} — DKU Haji & Umrah`;
+
+function applyDkuBrand(content) {
+  return content
+    .replaceAll('Safar Amanah', 'DKU Haji & Umrah')
+    .replaceAll('Redaksi konsep DKU Haji & Umrah', 'Redaksi DKU Haji & Umrah')
+    .replaceAll('BRAND DEMO', 'PT DAYAKINDO KALIMANTAN UTAMA')
+    .replaceAll('MENGENAL BRAND DEMO', 'MENGENAL DKU')
+    .replaceAll('Kanal WhatsApp belum tersedia dalam demo.', 'Hubungi tim DKU melalui WhatsApp untuk konsultasi perjalanan.')
+    .replaceAll('href="#contact-form">Konsultasi via WhatsApp', `href="${WHATSAPP_URL}" target="_blank" rel="noopener">Konsultasi via WhatsApp`)
+    .replaceAll('Kantor DKU Haji & Umrah</h3><p>Alamat kantor akan ditambahkan<br>Tidak ada alamat kunjungan resmi pada konsep ini.', 'Kantor DKU Haji & Umrah</h3><p>Jl. Panglima Batur No. 37<br>Samarinda, Kalimantan Timur.')
+    .replaceAll('<h3>Email & telepon</h3><p>Belum tersedia</p>', `<h3>WhatsApp</h3><p><a href="${WHATSAPP_URL}" target="_blank" rel="noopener">+62 853-9336-0595</a></p>`)
+    .replaceAll('Instagram • YouTube • Facebook — Placeholder kanal sosial, belum ada akun resmi terhubung.', `<a href="${INSTAGRAM_URL}" target="_blank" rel="noopener">Instagram @dku.hajiumroh ↗</a>`);
+}
+
+document.getElementById('app').innerHTML = applyDkuBrand(pages[page]());
 bindInteractions(page);
